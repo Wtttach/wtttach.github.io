@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于本站 | Wtach&#39;s Pages</title>
+<link rel="shortcut icon" href="https://wtach.site/favicon.ico?v=1732810382695">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://wtach.site/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于本站 | Wtach&#39;s Pages - Atom Feed" href="https://wtach.site/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本网站使用 Gridea 生成，基于 Vercel 提供的托管服务器搭建，使用的域名属于腾讯云。
+网站使用的主题基于 Notes ，经过个人排版修改和代码逻辑优化。
+本网站主要用于展示和发表个人作品，网站和个人作品均为学习用途，不涉及任何盈..." />
+    <meta name="keywords" content="Type_Others" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://wtach.site">
+  <img class="avatar" src="https://wtach.site/images/avatar.png?v=1732810382695" alt="">
+  </a>
+  <h1 class="site-title">
+    Wtach&#39;s Pages
+  </h1>
+  <p class="site-description">
+    关于作者与网站，详见首页文章及About页面<br/>
+服务器原因，部分页面可能加载较慢，烦请稍作等待
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/tag/works" class="menu">
+          作品展示
+        </a>
+      
+    
+      
+        <a href="/tag/passages" class="menu">
+          文章
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于本站
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Wtttach" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://space.bilibili.com/50870234" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/wtach/posts" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于本站
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-01-27
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://wtach.site/tag/others/" class="post-tag">
+                  # Type_Others
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>本网站使用 <a href="https://open.gridea.dev/"><strong>Gridea</strong></a> 生成，基于 <a href="https://vercel.com/"><strong>Vercel</strong></a> 提供的托管服务器搭建，使用的域名属于<a href="https://cloud.tencent.com/"><strong>腾讯云</strong></a>。</p>
+<p>网站使用的主题基于 <a href="https://github.com/getgridea/gridea-theme-notes"><strong>Notes</strong></a> ，经过个人排版修改和代码逻辑优化。</p>
+<p>本网站主要用于展示和发表个人作品，网站和个人作品均为学习用途，不涉及任何盈利。</p>
+<p>本网站上出现的任何作品和项目均为个人创作或参与制作，绝无抄袭搬运；若有相关引用和参考会在文章中直接标出。</p>
+<p>若有搬运、转载网站内容的需求，或者对本站有任何问题，请直接通过社交网站和作者联系。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+        
+
+        
+
+        <div class="site-footer">
+  ©2024 Xingyi Zhang. All rights reserved. Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://wtach.site/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
